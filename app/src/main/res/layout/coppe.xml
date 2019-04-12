@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:id="@+id/barraTasti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/bottoni_menu" >
+
+                </include>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/layoutLogin"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="65dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blu"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bordo_arrotondato_trasparente"
+                android:textSize="24sp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Coppe" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnCoppaItalia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coppa Italia"
+                    tools:layout_editor_absoluteX="81dp"
+                    tools:layout_editor_absoluteY="83dp" />
+
+                <Button
+                    android:id="@+id/btnEuropaLeague"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Europa League"
+                    tools:layout_editor_absoluteX="81dp"
+                    tools:layout_editor_absoluteY="83dp" />
+
+                <Button
+                    android:id="@+id/btnChampions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Champion's League"
+                    tools:layout_editor_absoluteX="81dp"
+                    tools:layout_editor_absoluteY="83dp" />
+
+                <Button
+                    android:id="@+id/btnInterToto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intertoto"
+                    tools:layout_editor_absoluteX="81dp"
+                    tools:layout_editor_absoluteY="83dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

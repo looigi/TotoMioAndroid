@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="looigi.totomioii_2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="looigi.totomioii_2.acra.Acra"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:noHistory="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Propria" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".Classifiche" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".ClassificaGenerale" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".ClassificaRisultati" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".ClassificaCampionato" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".Resoconto" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".ColonneAltri" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".Amministrazione" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".SuddenDeath" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".DettaglioConcorso" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".Messaggi" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".ScriviMessaggi" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".Profilo" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".Coppe" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".CoppaItalia" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".EuropaLeague" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".Champions" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".ClassificaSpeciale" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".Intertoto" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".About" android:screenOrientation="portrait" android:noHistory="true"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>
